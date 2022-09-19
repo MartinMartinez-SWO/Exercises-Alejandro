@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+form {
+    margin: auto;
+    margin-top: 5em;
+    width: max-content;
+
+ 
+}
+fieldset{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+fieldset > input, textarea{
+    width: 99%;
+    margin: 10px 0 20px 0;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+button{
+    padding: 10px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+           
+                Nombre <input type="text" name="nombre" id="name">
+                Edad <input type="text" name="edad" id="age">
+                Dirección <input type="text" name="direccion" id="address">
+         
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de tu ordenador</legend>
+            Modelo de tu ordenador<input type="text" name="modelo" id="model">
+            Systema que te da el problema <select name="selection" id="problema">
+                <option value="CPU">CPU</option>
+                <option value="GPU">GPU</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Descripción del problema</legend>
+            <textarea name="area" id="textarea" cols="70" rows="10"></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        
+    </form>
+</body>
+
+</html>
